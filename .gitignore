@@ -4,8 +4,8 @@ __pycache__/
 *.pyo
 env/
 venv/
-data/vector_index/
-data/debate_history/
-data/uploads/
+# data/vector_index/
+# data/debate_history/
+# data/uploads/
 *.log
 .streamlit/secrets.toml
