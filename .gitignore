@@ -1,0 +1,11 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+env/
+venv/
+data/vector_index/
+data/debate_history/
+data/uploads/
+*.log
+.streamlit/secrets.toml
