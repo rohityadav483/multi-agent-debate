@@ -119,8 +119,8 @@ You ask: "Should our startup pivot from B2C to B2B?"
                            ▼
               ┌────────────────────────┐
               │      GROQ LLM API      │
-              │  llama-3.3-70b (main)  │
-              │  llama-3.1-8b (fast)   │
+              │   openai/gpt-oss-120b  │
+              │                        │
               └────────────────────────┘
 ```
 
@@ -270,7 +270,7 @@ multi-agent-debate/
 
 | Layer           | Technology           | Purpose                 |
 | --------------- | -------------------- | ----------------------- |
-| **LLM**         | Groq + LLaMA 3.3 70B | Debate agent inference  |
+| **LLM**         | Groq +OpenAI OSS 70B | Debate agent inference  |
 | **Fast LLM**    | LLaMA 3.1 8B Instant | Scoring & fact-checking |
 | **Embeddings**  | SentenceTransformers | Local free embeddings   |
 | **Vector DB**   | FAISS-CPU            | Similarity search       |
@@ -331,10 +331,10 @@ Key settings in `backend/config.py`:
 
 ```python
 NUM_ROUNDS      = 3                        # Debate rounds
-PRIMARY_MODEL   = "llama-3.3-70b-versatile"  # Main agent model
-FAST_MODEL      = "llama-3.1-8b-instant"     # Scoring model
+PRIMARY_MODEL   = "openai/gpt-oss-120b"    # Main agent model
+FAST_MODEL      = "openai/gpt-oss-120b"    # Scoring model
 TOP_K_RETRIEVAL = 5                        # RAG chunks per query
-MAX_LONG_TERM_DEBATES = 100               # Memory cap
+MAX_LONG_TERM_DEBATES = 100                # Memory cap
 ```
 
 ---

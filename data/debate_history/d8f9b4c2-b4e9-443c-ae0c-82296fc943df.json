@@ -1,0 +1,299 @@
+{
+  "debate_id": "d8f9b4c2-b4e9-443c-ae0c-82296fc943df",
+  "timestamp": "2026-04-26T07:54:51.393467",
+  "topic": "can we scale this business to global level ?\n",
+  "domain": "business_strategy",
+  "agenda": "[Agent unavailable — API call failed after all retries.]",
+  "rounds": [
+    {
+      "round": 1,
+      "arguments": {
+        "optimist": "[optimist failed to respond]",
+        "skeptic": "[skeptic failed to respond]",
+        "analyst": "[analyst failed to respond]",
+        "domain_expert": "[domain_expert failed to respond]"
+      },
+      "critic": {
+        "agent_name": "critic",
+        "content": "=== CRITIC SCORES — ROUND 1 ===\nOPTIMIST         | Logic:  0 | Evidence:  0 | Relevance:  0 | Persuasion:  0 | Total:   0/100\n  └─ No argument provided, resulting in a lack of logical consistency, evidence usage, relevance, and persuasiveness.\nSKEPTIC          | Logic:  0 | Evidence:  0 | Relevance:  0 | Persuasion:  0 | Total:   0/100\n  └─ No argument provided, resulting in a lack of logical consistency, evidence usage, relevance, and persuasiveness.\nANALYST          | Logic:  0 | Evidence:  0 | Relevance:  0 | Persuasion:  0 | Total:   0/100\n  └─ No argument provided, resulting in a lack of logical consistency, evidence usage, relevance, and persuasiveness.\nDOMAIN_EXPERT    | Logic:  0 | Evidence:  0 | Relevance:  0 | Persuasion:  0 | Total:   0/100\n  └─ No argument provided, resulting in a lack of logical consistency, evidence usage, relevance, and persuasiveness.",
+        "round_number": 1,
+        "metadata": {
+          "round": 1,
+          "scores": {
+            "optimist": {
+              "logical_consistency": 0,
+              "evidence_usage": 0,
+              "relevance": 0,
+              "persuasiveness": 0,
+              "justification": "No argument provided, resulting in a lack of logical consistency, evidence usage, relevance, and persuasiveness."
+            },
+            "skeptic": {
+              "logical_consistency": 0,
+              "evidence_usage": 0,
+              "relevance": 0,
+              "persuasiveness": 0,
+              "justification": "No argument provided, resulting in a lack of logical consistency, evidence usage, relevance, and persuasiveness."
+            },
+            "analyst": {
+              "logical_consistency": 0,
+              "evidence_usage": 0,
+              "relevance": 0,
+              "persuasiveness": 0,
+              "justification": "No argument provided, resulting in a lack of logical consistency, evidence usage, relevance, and persuasiveness."
+            },
+            "domain_expert": {
+              "logical_consistency": 0,
+              "evidence_usage": 0,
+              "relevance": 0,
+              "persuasiveness": 0,
+              "justification": "No argument provided, resulting in a lack of logical consistency, evidence usage, relevance, and persuasiveness."
+            }
+          }
+        },
+        "tokens_used": 0,
+        "success": true
+      },
+      "fact_checker": {
+        "agent_name": "fact_checker",
+        "content": "=== FACT-CHECK REPORT — ROUND 1 ===\n\nOPTIMIST:\n\nSKEPTIC:\n\nANALYST:\n\nDOMAIN_EXPERT:",
+        "round_number": 1,
+        "metadata": {
+          "round": 1,
+          "fact_checks": {
+            "optimist": [],
+            "skeptic": [],
+            "analyst": [],
+            "domain_expert": []
+          }
+        },
+        "tokens_used": 0,
+        "success": true
+      }
+    },
+    {
+      "round": 2,
+      "arguments": {
+        "optimist": "[optimist failed to respond]",
+        "skeptic": "[skeptic failed to respond]",
+        "analyst": "[analyst failed to respond]",
+        "domain_expert": "[domain_expert failed to respond]"
+      },
+      "critic": {
+        "agent_name": "critic",
+        "content": "=== CRITIC SCORES — ROUND 2 ===\nOPTIMIST         | Logic:  0 | Evidence:  0 | Relevance:  0 | Persuasion:  0 | Total:   0/100\n  └─ No argument provided, resulting in a lack of logical consistency, evidence usage, relevance, and persuasiveness.\nSKEPTIC          | Logic:  0 | Evidence:  0 | Relevance:  0 | Persuasion:  0 | Total:   0/100\n  └─ No argument provided, resulting in a lack of logical consistency, evidence usage, relevance, and persuasiveness.\nANALYST          | Logic:  0 | Evidence:  0 | Relevance:  0 | Persuasion:  0 | Total:   0/100\n  └─ No argument provided, resulting in a lack of logical consistency, evidence usage, relevance, and persuasiveness.\nDOMAIN_EXPERT    | Logic:  0 | Evidence:  0 | Relevance:  0 | Persuasion:  0 | Total:   0/100\n  └─ No argument provided, resulting in a lack of logical consistency, evidence usage, relevance, and persuasiveness.",
+        "round_number": 2,
+        "metadata": {
+          "round": 2,
+          "scores": {
+            "optimist": {
+              "logical_consistency": 0,
+              "evidence_usage": 0,
+              "relevance": 0,
+              "persuasiveness": 0,
+              "justification": "No argument provided, resulting in a lack of logical consistency, evidence usage, relevance, and persuasiveness."
+            },
+            "skeptic": {
+              "logical_consistency": 0,
+              "evidence_usage": 0,
+              "relevance": 0,
+              "persuasiveness": 0,
+              "justification": "No argument provided, resulting in a lack of logical consistency, evidence usage, relevance, and persuasiveness."
+            },
+            "analyst": {
+              "logical_consistency": 0,
+              "evidence_usage": 0,
+              "relevance": 0,
+              "persuasiveness": 0,
+              "justification": "No argument provided, resulting in a lack of logical consistency, evidence usage, relevance, and persuasiveness."
+            },
+            "domain_expert": {
+              "logical_consistency": 0,
+              "evidence_usage": 0,
+              "relevance": 0,
+              "persuasiveness": 0,
+              "justification": "No argument provided, resulting in a lack of logical consistency, evidence usage, relevance, and persuasiveness."
+            }
+          }
+        },
+        "tokens_used": 0,
+        "success": true
+      },
+      "fact_checker": {
+        "agent_name": "fact_checker",
+        "content": "=== FACT-CHECK REPORT — ROUND 2 ===\n\nOPTIMIST:\n\nSKEPTIC:\n\nANALYST:\n\nDOMAIN_EXPERT:",
+        "round_number": 2,
+        "metadata": {
+          "round": 2,
+          "fact_checks": {
+            "optimist": [],
+            "skeptic": [],
+            "analyst": [],
+            "domain_expert": []
+          }
+        },
+        "tokens_used": 0,
+        "success": true
+      }
+    },
+    {
+      "round": 3,
+      "arguments": {
+        "optimist": "[optimist failed to respond]",
+        "skeptic": "[skeptic failed to respond]",
+        "analyst": "[analyst failed to respond]",
+        "domain_expert": "[domain_expert failed to respond]"
+      },
+      "critic": {
+        "agent_name": "critic",
+        "content": "=== CRITIC SCORES — ROUND 3 ===\nOPTIMIST         | Logic:  0 | Evidence:  0 | Relevance:  0 | Persuasion:  0 | Total:   0/100\n  └─ No argument provided, unable to assess.\nSKEPTIC          | Logic:  0 | Evidence:  0 | Relevance:  0 | Persuasion:  0 | Total:   0/100\n  └─ No argument provided, unable to assess.\nANALYST          | Logic:  0 | Evidence:  0 | Relevance:  0 | Persuasion:  0 | Total:   0/100\n  └─ No argument provided, unable to assess.\nDOMAIN_EXPERT    | Logic:  0 | Evidence:  0 | Relevance:  0 | Persuasion:  0 | Total:   0/100\n  └─ No argument provided, unable to assess.",
+        "round_number": 3,
+        "metadata": {
+          "round": 3,
+          "scores": {
+            "optimist": {
+              "logical_consistency": 0,
+              "evidence_usage": 0,
+              "relevance": 0,
+              "persuasiveness": 0,
+              "justification": "No argument provided, unable to assess."
+            },
+            "skeptic": {
+              "logical_consistency": 0,
+              "evidence_usage": 0,
+              "relevance": 0,
+              "persuasiveness": 0,
+              "justification": "No argument provided, unable to assess."
+            },
+            "analyst": {
+              "logical_consistency": 0,
+              "evidence_usage": 0,
+              "relevance": 0,
+              "persuasiveness": 0,
+              "justification": "No argument provided, unable to assess."
+            },
+            "domain_expert": {
+              "logical_consistency": 0,
+              "evidence_usage": 0,
+              "relevance": 0,
+              "persuasiveness": 0,
+              "justification": "No argument provided, unable to assess."
+            }
+          }
+        },
+        "tokens_used": 0,
+        "success": true
+      },
+      "fact_checker": {
+        "agent_name": "fact_checker",
+        "content": "=== FACT-CHECK REPORT — ROUND 3 ===\n\nOPTIMIST:\n\nSKEPTIC:\n\nANALYST:\n\nDOMAIN_EXPERT:",
+        "round_number": 3,
+        "metadata": {
+          "round": 3,
+          "fact_checks": {
+            "optimist": [],
+            "skeptic": [],
+            "analyst": [],
+            "domain_expert": []
+          }
+        },
+        "tokens_used": 0,
+        "success": true
+      }
+    }
+  ],
+  "scores": {
+    "leaderboard": [
+      {
+        "rank": 1,
+        "agent": "analyst",
+        "score": 0.0,
+        "badge": "🥇"
+      },
+      {
+        "rank": 2,
+        "agent": "domain_expert",
+        "score": 0.0,
+        "badge": "🥈"
+      },
+      {
+        "rank": 3,
+        "agent": "optimist",
+        "score": 0.0,
+        "badge": "🥉"
+      },
+      {
+        "rank": 4,
+        "agent": "skeptic",
+        "score": 0.0,
+        "badge": "4️⃣"
+      }
+    ],
+    "weighted_totals": {
+      "analyst": 0.0,
+      "domain_expert": 0.0,
+      "optimist": 0.0,
+      "skeptic": 0.0
+    },
+    "per_metric": {
+      "analyst": {
+        "logical_consistency": 0.0,
+        "evidence_usage": 0.0,
+        "relevance": 0.0,
+        "persuasiveness": 0.0
+      },
+      "domain_expert": {
+        "logical_consistency": 0.0,
+        "evidence_usage": 0.0,
+        "relevance": 0.0,
+        "persuasiveness": 0.0
+      },
+      "optimist": {
+        "logical_consistency": 0.0,
+        "evidence_usage": 0.0,
+        "relevance": 0.0,
+        "persuasiveness": 0.0
+      },
+      "skeptic": {
+        "logical_consistency": 0.0,
+        "evidence_usage": 0.0,
+        "relevance": 0.0,
+        "persuasiveness": 0.0
+      }
+    },
+    "winner": "analyst",
+    "rounds_scored": 3,
+    "raw_round_scores": {
+      "1": {
+        "optimist": 0,
+        "skeptic": 0,
+        "analyst": 0,
+        "domain_expert": 0
+      },
+      "2": {
+        "optimist": 0,
+        "skeptic": 0,
+        "analyst": 0,
+        "domain_expert": 0
+      },
+      "3": {
+        "optimist": 0,
+        "skeptic": 0,
+        "analyst": 0,
+        "domain_expert": 0
+      }
+    }
+  },
+  "verdict": {
+    "final_decision": "Unable to reach a decision due to a system error.",
+    "confidence_score": 0,
+    "risk_level": "Unknown",
+    "winning_agent": "N/A",
+    "key_reasons": [],
+    "dissenting_view": "",
+    "explanation": "The Judge agent encountered an error."
+  },
+  "all_flags": [],
+  "duration_sec": 171.71,
+  "total_tokens": 0,
+  "summary": "Topic: can we scale this business to global level ?\n | Decision: Unable to reach a decision due to a system error. | Winner: N/A | Confidence: 0%"
+}

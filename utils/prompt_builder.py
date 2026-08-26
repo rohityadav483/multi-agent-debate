@@ -471,14 +471,27 @@ Respond ONLY with this JSON structure:
         return "\n".join(lines)
 
     def _format_full_transcript(self, all_rounds: list[dict]) -> str:
+        """
+        Format debate history for the Judge while keeping
+        the prompt within the model's token budget.
+        Each agent argument is truncated to 600 characters.
+        """
         lines = []
         for round_data in all_rounds:
             rnum = round_data.get("round", "?")
-            lines.append(f"\n{'='*40}")
+            lines.append(f"\n{'=' * 40}")
             lines.append(f"ROUND {rnum}")
-            lines.append(f"{'='*40}")
+            lines.append(f"{'=' * 40}")
+
             for agent, text in round_data.get("arguments", {}).items():
-                lines.append(f"\n[{agent.upper()}]:\n{text}")
+                # Limit each argument to prevent oversized Judge prompts
+                preview = text[:600]
+                if len(text) > 600:
+                    preview += "..."
+
+                lines.append(
+                    f"\n[{agent.upper()}]:\n{preview}"
+                )
         return "\n".join(lines)
 
     def _format_scores_block(self, scores_summary: dict) -> str:
@@ -489,13 +502,27 @@ Respond ONLY with this JSON structure:
             lines.append(f"  {agent.upper():<20} Total Score: {total}/300")
         return "\n".join(lines)
 
-    def _format_fact_flags(self, fact_check_summary: list[dict]) -> str:
+    def _format_fact_flags(
+        self,
+        fact_check_summary: list[dict]
+    ) -> str:
+        """
+        Format only important fact-check flags for the Judge.
+        Verified claims are omitted to reduce Judge prompt size.
+        """
         if not fact_check_summary:
             return "No fact-check results available."
         lines = []
         for item in fact_check_summary:
-            status = item.get("status", "?")
-            claim  = item.get("claim", "")[:100]
-            agent  = item.get("agent", "?")
-            lines.append(f"  [{status.upper()}] {agent}: {claim}")
-        return "\n".join(lines) if lines else "No flags raised."
+            status = str(item.get("status", "")).lower()
+            # Only send claims that require attention
+            if status not in {"unverified", "uncertain"}:
+                continue
+            claim = str(item.get("claim", ""))[:150]
+            agent = item.get("agent", "?")
+            lines.append(
+                f"[{status.upper()}] {agent}: {claim}"
+            )
+        if not lines:
+            return "No important fact-check flags."
+        return "\n".join(lines)

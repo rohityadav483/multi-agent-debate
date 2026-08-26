@@ -48,6 +48,7 @@ class JudgeAgent(BaseAgent):
             system_prompt=system_prompt,
             user_message=user_message,
             model=PRIMARY_MODEL,
+            max_tokens=700,
         )
 
         if "error" in parsed:

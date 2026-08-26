@@ -231,6 +231,13 @@ class DebateEngine:
             # FIX 3: sleep before judge (uses fast model — same rate limit)
             time.sleep(5)
 
+            logger.info(
+                "Judge input prepared | "
+                f"rounds={len(result.rounds)} | "
+                f"scores={len(scores_summary)} | "
+                f"fact_flags={len(all_flags)}"
+            )
+            
             judge_result   = self.judge.run(
                 topic=query,
                 agenda=result.agenda,

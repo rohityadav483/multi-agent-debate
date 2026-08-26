@@ -173,12 +173,18 @@ class LLMClient:
         if response.status_code == 429:
             raise requests.exceptions.RequestException(
                 "Rate limit hit. Backing off..."
-            )
+        )
+
+        if response.status_code == 413:
+            raise ValueError(
+            "REQUEST_TOO_LARGE: "
+            "Request exceeds the model's token limit."
+        )
 
         if response.status_code != 200:
             raise requests.exceptions.RequestException(
                 f"Groq API error {response.status_code}: {response.text}"
-            )
+        )
 
         try:
             data = response.json()
@@ -226,8 +232,9 @@ class LLMClient:
     def extract_json(
         self,
         system_prompt: str,
-        user_message:  str,
-        model:         Optional[str] = None,
+        user_message: str,
+        model: Optional[str] = None,
+        max_tokens: int = 700,
     ) -> dict:
         """
         Request a JSON-only response from the LLM and parse it safely.
@@ -247,7 +254,7 @@ class LLMClient:
             user_message=user_message,
             model=model or FAST_MODEL,
             temperature=0.1,    # Near-zero for deterministic JSON
-            max_tokens=1200,
+            max_tokens=max_tokens,
         )
 
         try:
